@@ -42,11 +42,27 @@
 
                 p { page-break-inside: avoid; }
 
-                .page-break { display: block; page-break-before: always; }
+                .page-break { 
+                    display: block; 
+                    page-break-before: always; 
+                }
 
                 table { width: 100%; }
                 
                 td { border-color: #000; }
+
+                a::after { 
+                    content: '(' attr(href) ')';
+                    margin-left: 2px;
+                }
+
+                .actions { display: none; }
+
+                .expense::before { content: '- '; }
+                .expense::after { content: ' - Despesa'; }
+                .profit::before { content: '+ '; }
+                .profit::after { content: ' - Receita'; }
+
 
             }
 
@@ -71,7 +87,6 @@
              </tr>
              
         </table>
-
 
     </body>
 
