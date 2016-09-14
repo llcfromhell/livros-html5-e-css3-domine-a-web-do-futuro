@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang='pt-br'>
+
+<head>
+    <meta charset='utf-8'>
+</head>
+
+<style>
+    h1 {
+        color: #BD2C00;
+        font-size: 1.2em;
+        margin: 0;
+    }
+    
+    h2 {
+        font-size: 1em;
+        margin: 5px 0;
+    }
+    
+    .available {
+        background-color: #6CC644;
+        border-radius: 3px;
+        color: white;
+        font-size: 0.8em;
+        font-weight: bold;
+        padding: 3px 7px;
+        text-shadow: 0 1px 2px rgba(0, 0, 0, 0.7);
+    }
+    
+    ul {
+            background-color: #56B4EF;
+            background-image: 
+            -webkit-linear-gradient(#56B4EF, #148EDA);
+            background-image: 
+            -o-linear-gradient(#56B4EF, #148EDA);
+            background-image: 
+            linear-gradient(#56B4EF, #148EDA);
+            background-image: 
+            -moz-linear-gradient(#56B4EF, #148EDA);
+            float: left;
+            list-style: none;
+            margin: 10px 10px 0 0;
+            padding: 0;
+            width: 230px;
+        }
+    
+    ul {
+        border-radius: 5px;
+        border: 1px solid rgba(0, 0, 0, 0.3);
+    }
+    
+    @font-face {
+        font-family: 'IconicFill';
+        src: url('iconic_fill.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    }
+    
+    .icon::before {
+        font-family: 'IconicFill';
+        margin: 0px 5px;
+    }
+    
+    .paper::before {
+        content: '\e00b';
+    }
+    
+    .digital::before {
+        content: '\e044';
+    }
+    
+    .package::before {
+        content: '\e022';
+    }
+    
+    .icon {
+        color: #FFF;
+        display: block;
+        font-size: 0.9em;
+        font-weight: bold;
+        padding: 5px;
+        text-decoration: none;
+        text-shadow: 0 1px 0 rgba(0, 0, 0, 0.9);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+        border-top: 1px solid rgba(255, 255, 255, 0.3);
+    }
+    
+    .icon:hover {
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+    
+    .icon.paper {
+        border-top: none;
+    }
+    
+    .icon.package {
+        border-bottom: none;
+    }
+</style>
+
+<body>
+
+    <article class='book'>
+        <header>
+            <h1> Ruby on Rails: coloque sua aplicação web nos trilhos </h1>
+            <h2>Vinicius Baggio</h2>
+            <span class='available'>Disponível</span>
+        </header>
+
+        <ul>
+            <li> <a href='#' class='icon paper'> Comprar a versão física </a> </li>
+            <li> <a href='#' class='icon digital'> Comprar a versão digital </a> </li>
+            <li> <a href='#' class='icon package'> Comprar o pacote completo! </a> </li>
+        </ul>
+
+    </article>
+
+</body>
+
+</html>
